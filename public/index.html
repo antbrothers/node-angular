@@ -1,0 +1,26 @@
+<!doctype html>
+<html ng-app="scotchTodo">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Node/Angular Demo</title>
+    <link rel="stylesheet" href="bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/login.css">
+    <style>
+        html{ overflow-y:scroll; }
+        body{ padding-top:50px; }
+        #todo-list{ margin-bottom:30px; }
+        #todo-form{ margin-bottom:50px; }
+    </style>
+    <script src="jquery/dist/jquery.min.js"></script>
+   <script src="angular/angular.min.js"></script>
+    <script src="angular-ui-router/release/angular-ui-router.js"></script>
+    <script src="js/controllers/main.js"></script>
+    <script src="js/services/todo.js"></script>
+    <script src="js/router.js"></script>
+</head>
+<body>
+<div ui-view=""></div>
+</body>
+</html>

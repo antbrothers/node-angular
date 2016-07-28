@@ -1,0 +1,21 @@
+<div class="container-fluid" id="login">
+    <div class="form" style="display: block;">
+        <div id="landing" class="border-btn">登陆</div>
+        <div id="registered">注册</div>
+        <div class="fix"></div>
+        <div id="landing-content">
+            <div id="photo"><img src="img/photo.jpg"></div>
+            <div class="inp"><input name="username" type="text" placeholder="用户名"></div>
+            <div class="inp"><input name="password" type="password" placeholder="密码"></div>
+            <div class="login btn-primary">登录</div>
+            <div id="bottom"><span id="registeredtxt">立即注册</span><span id="forgotpassword">忘记密码</span></div>
+        </div>
+        <div id="registered-content">
+            <div class="inp"><input ng-model="formData.username" name="username" type="text" placeholder="请输入用户名"></div>
+            <div class="inp"><input ng-model="formData.password" name="password" type="password" placeholder="请输入密码"></div>
+            <div class="inp"><input ng-model="formData.checkpassword" name="checkpassword" type="password" placeholder="请再次输入密码"></div>
+            <div class="inp"><input ng-model="formData.email" name="email" type="text" placeholder="电子邮箱"></div>
+            <div class="login btn-primary" ng-click="register()">立即注册</div>
+        </div>
+    </div>
+</div>

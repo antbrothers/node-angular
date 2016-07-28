@@ -1,0 +1,32 @@
+/**
+ * Created by Administrator on 2016/7/5.
+ */
+var app=angular.module('scotchTodo',[
+    'ui.router',
+    'todoController',
+    'todoService'
+]);
+app.config(['$urlRouterProvider','$stateProvider',function($urlRouterProvider,$stateProvider){
+    $urlRouterProvider.when('','/home');
+    $stateProvider
+        .state('home',{
+            url:'/home',
+            templateUrl:'../templates/index.html',
+            controller:'mainController'
+        })
+        .state('home.detail',{
+            url:'/detail',
+            views:{
+                'homeCont':{
+                    templateUrl:"../templates/detail.html",
+                    controller:'detailCtrl'
+                }
+            }
+        })
+        //µÇÂ¼
+        .state('login',{
+            url:'/login',
+            templateUrl:'../templates/login.html',
+            controller:'loginCtrl'
+        })
+}]);
