@@ -20,10 +20,9 @@ module.exports=function(app){
             email:req.body.email,
             checkpassword:req.body.checkpassword,
             done:false
-        },{runValidators:true},function(err,todo){
+        },function(err,todo){
             debugger;
             if(err){
-                console.log(err.errors.color.message)
                 res.send(err);
             }else{
                 getRegister(res);
